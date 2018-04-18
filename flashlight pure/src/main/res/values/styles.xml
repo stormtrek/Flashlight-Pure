@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SOSSwitch">
+        <item name="colorControlActivated">@color/red</item>
+        <item name="colorSwitchThumbNormal">@color/red</item>
+        <item name="android:colorForeground">@color/red</item>
+    </style>
+
+    <style name="LightSwitch">
+        <item name="colorControlActivated">@color/bluelight</item>
+        <item name="colorSwitchThumbNormal">@color/bluelight</item>
+        <item name="android:colorForeground">@color/bluelight</item>
+    </style>
+
+    <style name="MorseSwitch">
+        <item name="colorControlActivated">@color/orange</item>
+        <item name="colorSwitchThumbNormal">@color/orange</item>
+        <item name="android:colorForeground">@color/orange</item>
+    </style>
+
+    <style name="SmartSwitch">
+        <item name="colorControlActivated">@color/green</item>
+        <item name="colorSwitchThumbNormal">@color/green</item>
+        <item name="android:colorForeground">@color/green</item>
+    </style>
+
+</resources>

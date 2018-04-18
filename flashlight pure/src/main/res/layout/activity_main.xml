@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.chan.andy.flashlight.MainActivity"
+    android:background="@color/background_floating_material_dark">
+
+    <SurfaceView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/camSurface"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:id="@+id/seekBar"
+        android:max="950"
+        android:layout_below="@+id/toggleSwitch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/morseText"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/strobeSwitch"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Morse Code"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <Switch
+        android:text="Morse Code  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/MorseSwitch"
+        android:id="@+id/morseSwitch"
+        android:layout_below="@+id/morseText"
+        android:layout_alignRight="@+id/strobeSwitch"
+        android:layout_alignEnd="@+id/strobeSwitch"
+        android:textColor="@android:color/white" />
+
+    <Switch
+        android:text="Smart Mode  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/SmartSwitch"
+        android:id="@+id/smartSwitch"
+        android:layout_marginTop="22dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/sosSwitch"
+        android:layout_alignEnd="@+id/sosSwitch" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Darkness thrives in the void, but always yields to purifying light"
+        android:id="@+id/textView"
+        android:elevation="0dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:text="ON/OFF  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/LightSwitch"
+        android:id="@+id/toggleSwitch"
+        android:layout_marginTop="41dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/sosSwitch"
+        android:layout_alignRight="@+id/strobeSwitch"
+        android:layout_alignEnd="@+id/strobeSwitch" />
+
+    <Switch
+        android:text="SOS  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sosSwitch"
+        android:theme="@style/SOSSwitch"
+        android:layout_marginTop="37dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/smartSwitch"
+        android:layout_alignRight="@+id/toggleSwitch"
+        android:layout_alignEnd="@+id/toggleSwitch" />
+
+    <Switch
+        android:text="Strobe  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/strobeSwitch"
+        android:theme="@style/LightSwitch"
+        android:layout_marginRight="48dp"
+        android:layout_marginEnd="48dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/seekBar"
+        android:layout_alignRight="@+id/morseText"
+        android:layout_alignEnd="@+id/morseText" />
+
+    <TextView
+        android:text="Strobe light frequency:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/strobeSwitch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frequencyText"
+        android:text="1000 ms"
+        android:textColor="@android:color/white"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignRight="@+id/strobeSwitch"
+        android:layout_alignEnd="@+id/strobeSwitch" />
+
+
+</RelativeLayout>
